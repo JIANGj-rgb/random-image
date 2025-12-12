@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>最美的hsx</title>
+</head>
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #f0f0f0;">
+    <img id="myImage" src="" alt="随机图片" style="max-width: 100%; max-height: 100vh; object-fit: contain;">
+    
+    <script>
+        var myImages = [
+            "4f3a5f9adda8a7ce6e78879b887e3e68.jpg",
+            "1c8e907e3ddddbb8b1ea6b4080e16333.jpg",
+            "fe26fffa0f3f62438fd589356f33b7a1.jpg",
+            "f6397783516fe03a06191ebc883ba86e.jpg",
+            "e5739be90465a7e8c9e062cf80321731.jpg",
+            "e23bad9719ca870da66fd182be5bd072.jpg",
+            "dfb42d8a776d2cf6e730eef4d53aac19.jpg",
+            "c5227b997b030316a3ca0ed18a1c499d.jpg",
+            "c640e96b52888eb8859ca9e069882e08.jpg",
+            "bf31348245c68b37fc61f81860bebf32.jpg",
+            "bf0d9fbae2095c3bb0dbb3cc014532f5.jpg",
+            "b62c02d3cd9c6f76a8ab0cd914cacac7.jpg",
+            "b34d71bc86f13ec8b548d1875a6fd3c3.jpg",
+            "1126749440ba93ccd5b7686aa00fbf5c.jpg",
+            "012681f550261f010be28f27c7e3c15d.jpg",
+            "7755b781657d43344ca6a19eb127b6be.jpg",
+            "6533cf9072e3c70d4689910b3df24c12.jpg",
+            "505a4b429f3266442575c0e7f1a7755a.jpg",
+            "9aa9e5ba7e283c51d60ab85053cf7432.jpg",
+            "6e2ed9346d465b3f81410c202b9a02b3.jpg",
+            "5abff7c16a47c8f1319917d4ec07c23b.jpg"
+        ];
+        
+        var randomNumber = Math.floor(Math.random() * myImages.length);
+        document.getElementById("myImage").src = myImages[randomNumber];
+    </script>
+</body>
+</html>
